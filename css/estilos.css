@@ -1,0 +1,422 @@
+/* ==========================
+   ESTILO GENERAL
+   ========================== */
+   body {
+    margin: 0px auto; /* Quita el borde y empieza desde el filo de la pantalla */
+    background-color: #FFEFDF;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: black;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: SemiBold;
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 14px;
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+
+h4 {
+    font-size: 16px;
+    color: black;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+}
+
+/* ==========================
+   BARRA DE NAVEGACION
+   ========================== */
+
+.barra {
+    background-color: #A3A656;
+    padding: 0px 70px; /* Espaciado alrededor del texto */
+    height: 70px;
+    display: flex; /* Flex container */
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    position: relative; /* Para que los elementos dentro se alineen correctamente */
+}
+
+.barra ul {
+    list-style-type: none; /* Quita las viñetas */
+    margin: 0px; /* Quita el margen de la ul */
+    padding: 0px;
+    display: flex;
+}
+
+.barra ul li {
+    margin-right: 30px; /* Espaciado entre los enlaces */
+}
+
+.barra ul li a {
+    text-decoration: none; /* Quita subrayado */
+    color: black;
+
+}
+
+.barra a:hover {
+    color: #FFFF00; /* Color del texto al pasar el mouse */
+}
+
+.cuenta {
+    display: flex; /* Elementos alineados horizontalmente */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.cuenta .usuario {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    display: flex; /* Centra la imagen en el contenedor */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    cursor: pointer;
+}
+
+.cuenta .espacio {
+    margin-right: 20px;
+}
+
+.cuenta .bandera {
+    width: 45px;
+    height: 30px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.cuenta .busqueda {
+    width: 10px;
+    height: 10px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+/* ==========================
+   CONTENIDO PRINCIPAL
+   ========================== */
+.main_content {
+    text-align: center; /* Centra todo horizontalmente */
+    padding: 0;
+    position: relative; /* Necesario para posicionamiento */
+}
+
+.background_container {
+    position: relative; /* Establece el contexto de posicionamiento */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+.overlay-text {
+    position: absolute; /* Para posicionar el texto sobre la imagen */
+    top: 40%; /* Centra verticalmente el texto */
+    left: 30%; /* Centra horizontalmente el texto */
+    transform: translate(-50%, -50%); /* Ajusta el centro exacto */
+    color: black;
+    text-align: left; /* Asegura que el texto esté centrado */
+}
+
+.overlay-text h1 {
+    font-family: "Romanesco", cursive;
+    font-weight: 200;
+    font-size: 96px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.overlay-text h2 {
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.background_image {
+    width: 100%; /* La imagen ocupa todo el ancho */
+    max-height: 500px; /* Limita la altura máxima */
+    object-fit: cover; /* Ajusta la imagen para llenar el espacio */
+    display: block; /* Elimina cualquier comportamiento inline */
+    margin: 0 auto; /* Centra la imagen si tiene espacio sobrante */
+}
+
+/* ==========================
+   PARA RESERVACION
+   ========================== */
+.reservacion{
+    background-color: #F2F6F6;
+    padding: 0px 100px; /* Espaciado alrededor del texto */
+    height: 100px;
+    display: flex; /* Flex container */
+    justify-content: center; /* centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    position: relative; /* Para que los elementos dentro se alineen correctamente */
+}
+
+.reservacion div{
+    display: flex; /* Flex container para alinear el label y el input en línea */
+    align-items: center; /* Alinea verticalmente los elementos */
+    gap: 10px; /* Espacio entre el label y el input */
+}
+
+.reservacion .espacio {
+    margin-right: 30px;
+}
+
+.reservacion label{
+    margin: 0; /* Elimina el margen extra del label */
+    font-size: 16px; /* Tamaño de letra consistente */
+    font-weight: bold; /* Resalta el texto */
+}
+
+.reservacion input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    background-color: white;
+    height: 30px;
+
+}
+
+/* ==========================
+   CARTA DE SERVICIOS
+   ========================== */
+
+.servicios{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap; /*ajusta a la pantalla*/
+    justify-content: center;
+    gap: 20px;
+}
+
+.column{
+    width: 300px;
+    display: inline-block;
+    margin: 100px 50px;
+}
+
+.carta_servicio{
+    color: #fff;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carta_servicio h2{
+    background-color: #A3A656;
+    color: #fff;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 25px;
+}
+
+.carta_servicio p{
+    color: black;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: left;
+    flex-grow: 1;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.carta_servicio .img_servicios{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.precio{
+    display: flex;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.precio p{
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.precio .btn_reserva{
+    border-radius: 35px ;
+    background-color: #A3A656;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px;
+    width: 125px;
+}
+
+.btn_reserva:hover {
+    background-color: #384001;
+}
+
+/* ==========================
+   CARTA DE MEMBRESIAS
+   ========================== */
+.memberships {
+    background-color: #F2F6F6;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    gap: 40px; /* Espacio entre el título y las tarjetas */
+    padding: 40px 20px; /* Espaciado interno */
+    text-align: center;
+    height: 770px;
+}
+
+.tarjetas {
+    display: flex; /* Activa Flexbox para alinear las tarjetas horizontalmente */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten si es necesario */
+    margin-top: 80px;
+}
+
+.carta_miembros {
+    width: 300px; /* Tamaño fijo para las tarjetas */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.contenedor_circulo {
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 10px solid #384001;
+    margin: 0 auto;
+}
+
+.miembros { /*imagenes*/
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+}
+
+.btn_condiciones {
+    border-radius: 35px;
+    background-color: #A3A656;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    width: 250px;
+    height: 50px;
+}
+
+.btn_condiciones:hover {
+    background-color: #384001;
+}
+
+.carta_miembros h2{
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+
+.carta_miembros ul{
+    list-style-position: inside; /* Asegura que las viñetas estén alineadas con el texto */
+    text-align: left; /* Centra horizontalmente el texto y las viñetas */
+    padding: 0; /* Elimina el padding por defecto de las listas */
+    margin: 10px 0 0 0; /* Ajusta el espacio alrededor de la lista */
+    margin-left: 80px;
+}
+
+.carta_miembros li {
+    font-family: "Inter", sans-serif; /* Fuente consistente */
+    font-size: 14px; /* Tamaño de letra */
+    color: black; /* Color del texto */
+    margin: 5px 0; /* Espacio entre los elementos de la lista */
+}
+
+/* ==========================
+   FOOTER
+   ========================== */
+
+.barra_final {
+    background-color: #384001;
+    padding-left: 70px; /* Espaciado alrededor del texto */
+    height: 97px;
+    display: flex; /* Flex container */
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    position: relative; /* Para que los elementos dentro se alineen correctamente */
+}
+
+.barra_final ul {
+    list-style-type: none; /* Quita las viñetas */
+    margin: 0px; /* Quita el margen de la ul */
+    padding: 0px;
+    display: flex;
+}
+
+.barra_final ul li {
+    margin-right: 30px; /* Espaciado entre los enlaces */
+}
+
+.barra_final ul li a {
+    text-decoration: none; /* Quita subrayado */
+    color: #A3A656;
+    font-weight: 400;
+}
+
+
+.barra_final .espacio{
+    margin-right: 100px;
+}
+
+.barra_final a:hover {
+    color: #FFFF00; /* Color del texto al pasar el mouse */
+}
+
+.redes_sociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes_sociales h4{
+    color: #A3A656;
+    font-weight: 400;
+}
+
+.redes_sociales img{
+    width: 35px; /* Ancho de la imagen */
+    height: 35px; /* Altura de la imagen */
+    object-fit: contain; /* Ajusta la imagen sin distorsión */
+    margin: 0 20px; /* Espaciado horizontal entre las imágenes */
+    cursor: pointer;
+}

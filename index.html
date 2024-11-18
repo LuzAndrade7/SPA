@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Librerías externas de iconos y fuentes -->
+    <script src="https://kit.fontawesome.com/c3ba5e5704.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>SPA Todos</title>
+</head>
+<body>
+    <!-- Encabezado con barra de navegación principal -->
+    <header>
+        <nav>
+            <div class="barra">
+                <ul> 
+                    <!-- Opciones de navegación -->
+                    <li><h4><a href="#">Promociones</a></h4></li>
+                    <li><h4><a href="#">Fotos</a></h4></li>
+                    <li><h4><a href="#">Servicios</a></h4></li>
+                    <li><h4><a href="#">Mapa</a></h4></li>
+                    <li><h4><a href="#">Contacto</a></h4></li>
+                </ul>
+                <div class="cuenta">
+                    <!-- Elementos de cuenta y selección de idioma -->
+                    <div class="usuario"><img src="imagenes/user.png" alt="logomicuenta"></div> 
+                    <span><h3>Mi cuenta</h3></span>
+                    <span class="espacio"></span>
+                    <span><h3>ES</h3></span>
+                    <div class="bandera"><img src="imagenes/flag.png" alt="bandera"></div>
+                    <div class="busqueda"><img src="imagenes/arrow.png" alt="flecha"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal: Imagen de fondo y texto superpuesto -->
+    <main class="main_content">
+        <div class="background_container">
+            <img src="imagenes/main.png" alt="principal" class="background_image">
+            <div class="overlay-text">
+                <h1>SPA - Todos</h1>
+                <h2>Regálate un momento de paz y <br> consiente a tu piel en el mejor lugar</h2>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de reservación -->
+    <section class="reservacion">
+        <div>
+            <h4><label for="reserva">RESERVA TU CITA: </label></h4>
+            <input type="text" name="reserva" id="reserva" placeholder="TU NÚMERO">
+        </div>
+        <span class="espacio"></span>
+        <div>
+            <h4><label for="codigo">CÓDIGO PROMOCIONAL: </label></h4>
+            <input type="text" name="codigo" id="codigo" placeholder="CÓDIGO">
+        </div>
+    </section>
+
+    <!-- Sección de servicios -->
+    <section class="servicios">
+        <!-- Carta de servicio 1 -->
+        <div class="column">
+            <div class="carta_servicio">
+                <h2>Masaje de pies</h2>
+                <img src="imagenes/pies.png" alt="masaje de pies" class="img_servicios">
+                <p>Esta es una descripción de la opción en cuestión .....</p>
+                <div class="precio">
+                    <p class="price">$50</p>
+                    <button class="btn_reserva">RESERVAR</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carta de servicio 2 -->
+        <div class="column">
+            <div class="carta_servicio">
+                <h2>Masaje relajante</h2>
+                <img src="imagenes/relajante.png" alt="masaje relajante" class="img_servicios">
+                <p>Esta es una descripción de la opción en cuestión .....</p>
+                <div class="precio">
+                    <p class="price">$60</p>
+                    <button class="btn_reserva">RESERVAR</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carta de servicio 3 -->
+        <div class="column">
+            <div class="carta_servicio">
+                <h2>Masaje con bambú</h2>
+                <img src="imagenes/bambu.png" alt="masaje con bambú" class="img_servicios">
+                <p>Esta es una descripción de la opción en cuestión .....</p>
+                <div class="precio">
+                    <p class="price">$58</p>
+                    <button class="btn_reserva">RESERVAR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de membresías -->
+    <section class="memberships">
+        <h2>Hazte socio y prueba nuestros beneficios</h2>
+        <div class="tarjetas">
+            <!-- Membresía GOLD -->
+            <div class="carta_miembros">
+                <div class="contenedor_circulo">
+                    <img src="imagenes/gold.png" alt="mem_oro" class="miembros">
+                </div>
+                <h2>GOLD</h2>
+                <button class="btn_condiciones">VER CONDICIONES</button>
+                <ul>
+                    <li>Gimnasio</li>
+                    <li>Piscina</li>
+                    <li>Todos los tratamientos</li>
+                </ul>
+            </div>
+
+            <!-- Membresía PREMIUM -->
+            <div class="carta_miembros">
+                <div class="contenedor_circulo">
+                    <img src="imagenes/premium.png" alt="mem_premium" class="miembros">
+                </div>
+                <h2>PREMIUM</h2>
+                <button class="btn_condiciones">VER CONDICIONES</button>
+                <ul>
+                    <li>Gimnasio</li>
+                    <li>Todos los tratamientos</li>
+                </ul>
+            </div>
+
+            <!-- Membresía PLATE -->
+            <div class="carta_miembros">
+                <div class="contenedor_circulo">
+                    <img src="imagenes/plate.png" alt="mem_plata" class="miembros">
+                </div>
+                <h2>PLATE</h2>
+                <button class="btn_condiciones">VER CONDICIONES</button>
+                <ul>
+                    <li>Tratamientos Faciales</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <nav>
+            <div class="barra_final">
+                <ul> 
+                    <li><h4><a href="#">Políticas de cookies</a></h4></li>
+                    <li><h4><a href="#">Aviso Legal</a></h4></li>
+                    <li><h4><a href="#">Protección de datos</a></h4></li>
+                    <li><h4><a href="#">Mapa del sitio</a></h4></li>
+                </ul>
+                <div class="redes">
+                    <!-- Redes sociales -->
+                    <div class="redes_sociales">
+                        <h4>Síguenos en</h4>
+                        <img src="imagenes/rs_facebook.png" alt="facebook">
+                        <img src="imagenes/rs_twiter.png" alt="twitter">
+                        <img src="imagenes/rs_youtube.png" alt="youtube">
+                    </div> 
+                </div>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
